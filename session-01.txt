@@ -1,0 +1,28 @@
+JENKINS
+
+paste in https://pkg.jenkins.io/redhat-stable/jenkins.repo
+get the content 
+/etc/yum.repos.d/jenkins.repo  got to this folder and paste the content
+:wq!
+rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+ yum install fontconfig java-17-openjdk
+ yum install jenkins -y
+sudo systemctl daemon-reload
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+systemctl status jenkins
+now ip:8080 or jenkins.csvdaws78s.online:8080/
+get the path and past in superputty and copy the pswd
+got the web app and paste the paswd
+give creds and login
+
+
+agent-1
+3
+/home/ec2-user/jenkins-agent
+host: jenkins-agent.csvdaws78s.online
+
+
+new -- expense--config
+new -- vpc--config
+plugins --ansi, pipeline stageview, pl utility stage 
